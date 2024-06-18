@@ -44,7 +44,7 @@
 &kp TAB        &kp Q           &kp W           &kp E               &kp R      &kp T    &kp Y      &kp U      &kp I                &kp O            &kp P                    &kp ENTER
 &kp BACKSPACE  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &kp F      &kp G    &kp H      &kp J      &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON  &kp SQT
 &kp LSHFT      &lt 2 Z         &kp X           &kp C               &kp V      &lt 3 B  &lt 3 N    &kp M      &kp COMMA            &kp DOT          &lt 1 SLASH              &kp RSHFT
-&kp C_MUTE     &kp LGUI        &kp LALT        &kp LCTRL           &mo LOWER  &kp RET  &kp SPACE  &mo RAISE  &kp RCTRL            &kp RALT         &kp RGUI
+&kp C_MUTE     &kp LGUI        &kp LALT        &kp LCTRL           &mo LOWER  &kp RET  &kp SPACE  &kp LEFT   &kp UP_ARROW         &kp DOWN_ARROW   &kp RIGHT
                                                                                        &kp ENTER  &kp RIGHT  &kp UP_ARROW         &kp LEFT         &kp DOWN
             >;
 
