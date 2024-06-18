@@ -26,6 +26,20 @@
         };
     };
 
+    behaviors {
+        home_row: home_row {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW";
+            bindings = <&mt>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <25 26 27 34 33 32>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -40,12 +54,12 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC        &kp N1          &kp N2          &kp N3              &kp N4     &kp N5   &kp N6     &kp N7     &kp N8               &kp N9           &kp N0                   &none
-&kp TAB        &kp Q           &kp W           &kp E               &kp R      &kp T    &kp Y      &kp U      &kp I                &kp O            &kp P                    &kp ENTER
-&kp BACKSPACE  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &kp F      &kp G    &kp H      &kp J      &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMICOLON  &kp SQT
-&kp LSHFT      &lt 2 Z         &kp X           &kp C               &kp V      &lt 3 B  &lt 3 N    &kp M      &kp COMMA            &kp DOT          &lt 1 SLASH              &kp RSHFT
-&kp C_MUTE     &kp LGUI        &kp LALT        &kp LCTRL           &mo LOWER  &kp RET  &kp SPACE  &kp LEFT   &kp UP_ARROW         &kp DOWN_ARROW   &kp B
-                                                                                       &kp ENTER  &kp RIGHT  &kp UP_ARROW         &kp LEFT         &kp DOWN
+&kp ESC        &kp N1                &kp N2                &kp N3                    &kp N4     &kp N5   &kp N6     &kp N7     &kp N8                     &kp N9                 &kp N0                         &none
+&kp TAB        &kp Q                 &kp W                 &kp E                     &kp R      &kp T    &kp Y      &kp U      &kp I                      &kp O                  &kp P                          &kp ENTER
+&kp BACKSPACE  &home_row LEFT_GUI A  &home_row LEFT_ALT S  &home_row LEFT_CONTROL D  &kp F      &kp G    &kp H      &kp J      &home_row RIGHT_CONTROL K  &home_row RIGHT_ALT L  &home_row RIGHT_GUI SEMICOLON  &kp SQT
+&kp LSHFT      &lt 2 Z               &kp X                 &kp C                     &kp V      &lt 3 B  &lt 3 N    &kp M      &kp COMMA                  &kp DOT                &lt 1 SLASH                    &kp RSHFT
+&kp C_MUTE     &kp LGUI              &kp LALT              &kp LCTRL                 &mo LOWER  &kp RET  &kp SPACE  &kp LEFT   &kp UP_ARROW               &kp DOWN_ARROW         &kp B
+                                                                                                         &kp ENTER  &kp RIGHT  &kp UP_ARROW               &kp LEFT               &kp DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -85,12 +99,12 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &trans   &trans        &trans        &trans        &trans  &trans
-&bt BT_CLR_ALL  &trans        &trans        &trans           &trans        &trans        &trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-&trans          &trans        &kp LEFT_GUI  &kp LS(LC(TAB))  &kp LC(TAB)   &trans        &trans   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
-&trans          &trans        &trans        &trans           &trans        &kp TAB       &trans   &kp N7        &kp N8        &kp N9        &kp N0  &trans
-&trans          &trans        &trans        &trans           &trans        &kp HOME      &kp END  &trans        &trans        &trans        &trans
-                                                                                         &kp A    &kp B         &kp C         &kp D         &kp E
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &trans   &trans        &trans        &trans        &trans  &trans
+&bt BT_CLR_ALL  &trans        &trans                &trans           &trans        &trans        &trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
+&trans          &trans        &home_row LEFT_GUI A  &kp LS(LC(TAB))  &kp LC(TAB)   &trans        &trans   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
+&trans          &trans        &trans                &trans           &trans        &kp TAB       &trans   &kp N7        &kp N8        &kp N9        &kp N0  &trans
+&trans          &trans        &trans                &trans           &trans        &kp HOME      &kp END  &trans        &trans        &trans        &trans
+                                                                                                 &kp A    &kp B         &kp C         &kp D         &kp E
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
