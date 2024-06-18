@@ -31,6 +31,15 @@
         };
     };
 
+    macros {
+        m1: m1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(E) &kp ENTER>;
+            label = "M1";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
