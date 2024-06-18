@@ -110,7 +110,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_3 {
+        fn_arrows {
             bindings = <
 &trans  &trans   &trans  &trans  &trans   &trans  &trans  &trans          &trans           &trans             &trans     &trans
 &trans  &trans   &trans  &trans  &trans   &trans  &trans  &kp K_MUTE      &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans     &trans
