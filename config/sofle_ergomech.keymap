@@ -29,13 +29,6 @@
             quick-tap-ms = <150>;
             flavor = "balanced";
         };
-
-        td2: td2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD2";
-            #binding-cells = <0>;
-            bindings = <&kp LC(E)>, <&kp ENTER>;
-        };
     };
 
     keymap {
@@ -113,7 +106,7 @@
 &trans  &trans   &trans  &trans  &trans   &trans  &trans  &trans          &trans           &trans             &trans     &trans
 &trans  &trans   &trans  &trans  &trans   &trans  &trans  &kp K_MUTE      &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans     &trans
 &trans  &kp F12  &kp F7  &kp F8  &kp F10  &trans  &trans  &kp LEFT_ARROW  &kp UP_ARROW     &kp DOWN_ARROW     &kp RIGHT  &trans
-&trans  &trans   &trans  &trans  &trans   &trans  &trans  &td2            &trans           &trans             &trans     &trans
+&trans  &trans   &trans  &trans  &trans   &trans  &trans  &trans          &trans           &trans             &trans     &trans
 &trans  &trans   &trans  &trans  &trans   &trans  &trans  &trans          &trans           &trans             &trans
                                                   &trans  &trans          &trans           &trans             &trans
             >;
