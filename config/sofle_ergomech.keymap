@@ -35,7 +35,7 @@
         macro1: macro1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(E)>;
+            bindings = <&macro1>;
             label = "MACRO1";
         };
     };
