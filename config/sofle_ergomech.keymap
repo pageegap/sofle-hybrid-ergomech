@@ -29,6 +29,13 @@
             quick-tap-ms = <150>;
             flavor = "balanced";
         };
+
+        sensor1: sensor1 {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "SENSOR1";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     macros {
