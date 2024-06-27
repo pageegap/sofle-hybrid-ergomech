@@ -35,6 +35,8 @@
             label = "LAUNCH";
             #binding-cells = <0>;
             bindings = <&kp LC(UP_ARROW)>, <&kp RG(UP_ARROW)>;
+
+            tapping-term-ms = <300>;
         };
     };
 
