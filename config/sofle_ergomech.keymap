@@ -109,12 +109,12 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans                &kp F1  &kp F2       &kp F3                &kp F4                 &kp F5         &kp F6            &kp F7     &kp F8        &kp F9     &kp F10  &kp F11
-&trans                &trans  &kp PERCENT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp POUND      &kp POUND         &kp AMPS   &kp ASTERISK  &kp GRAVE  &trans   &kp F12
-&trans                &trans  &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(TILDE)  &kp EXCLAMATION   &kp EQUAL  &kp PLUS      &kp MINUS  &trans   &trans
-&trans                &trans  &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR     &kp LC(BSLH)      &kp PIPE   &kp AT_SIGN   &kp CARET  &trans   &trans
-&kp LG(LS(NUMBER_5))  &trans  &trans       &trans                &trans                 &trans         &kp TAB           &trans     &trans        &trans     &trans
-                                                                                                       &kp RG(UP_ARROW)  &trans     &trans        &trans     &trans
+&trans                &kp F1  &kp F2       &kp F3                &kp F4                 &kp F5         &kp F6            &kp F7     &kp F8        &kp F9         &kp F10  &kp F11
+&trans                &trans  &kp PERCENT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp POUND      &kp POUND         &kp AMPS   &kp ASTERISK  &kp GRAVE      &trans   &kp F12
+&trans                &trans  &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(TILDE)  &kp EXCLAMATION   &kp EQUAL  &kp PLUS      &kp MINUS      &trans   &trans
+&trans                &trans  &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR     &kp LC(BSLH)      &kp PIPE   &trans        &kp RIGHT_GUI  &trans   &trans
+&kp LG(LS(NUMBER_5))  &trans  &trans       &trans                &trans                 &trans         &kp TAB           &trans     &trans        &trans         &trans
+                                                                                                       &kp RG(UP_ARROW)  &trans     &trans        &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -133,9 +133,9 @@
             bindings = <
 &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &trans            &trans        &trans        &trans        &trans  &trans
 &bt BT_CLR_ALL  &trans        &trans        &trans           &trans        &trans        &trans            &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-&trans          &trans        &kp LEFT_GUI  &kp LS(LC(TAB))  &kp LC(TAB)   &trans        &trans            &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
-&trans          &trans        &trans        &trans           &trans        &kp TAB       &trans            &kp N7        &kp N8        &kp N9        &kp N0  &trans
-&trans          &trans        &trans        &trans           &trans        &kp HOME      &kp END           &trans        &trans        &trans        &trans
+&trans          &trans        &trans        &kp LS(LC(TAB))  &kp LC(TAB)   &trans        &trans            &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans
+&trans          &trans        &kp LEFT_GUI  &trans           &trans        &kp TAB       &trans            &kp N7        &kp N8        &kp N9        &kp N0  &trans
+&trans          &trans        &trans        &trans           &trans        &kp TAB       &kp END           &trans        &trans        &trans        &trans
                                                                                          &kp LG(UP_ARROW)  &trans        &trans        &trans        &trans
             >;
 
@@ -144,12 +144,12 @@
 
         fn_arrows {
             bindings = <
-&trans  &trans   &trans        &trans  &trans   &trans  &trans  &kp K_MUTE      &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans     &trans
-&trans  &trans   &kp LEFT_GUI  &trans  &kp TAB  &trans  &trans  &kp TAB         &trans           &kp RIGHT_GUI      &trans     &trans
-&trans  &kp F12  &kp F7        &kp F8  &kp F10  &trans  &trans  &kp LEFT_ARROW  &kp UP_ARROW     &kp DOWN_ARROW     &kp RIGHT  &trans
-&trans  &trans   &trans        &trans  &trans   &trans  &trans  &new_macro      &kp HOME         &kp END            &trans     &trans
-&trans  &trans   &trans        &trans  &trans   &trans  &trans  &trans          &trans           &trans             &trans
-                                                        &trans  &trans          &trans           &trans             &trans
+&trans  &trans   &trans  &trans  &trans   &trans  &trans  &kp K_MUTE      &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans     &trans
+&trans  &trans   &trans  &trans  &trans   &trans  &trans  &trans          &trans           &trans             &trans     &trans
+&trans  &kp F12  &kp F7  &kp F8  &kp F10  &trans  &trans  &kp LEFT_ARROW  &kp UP_ARROW     &kp DOWN_ARROW     &kp RIGHT  &trans
+&trans  &trans   &trans  &trans  &trans   &trans  &trans  &new_macro      &kp HOME         &kp END            &trans     &trans
+&trans  &trans   &trans  &trans  &trans   &trans  &trans  &trans          &trans           &trans             &trans
+                                                  &trans  &trans          &trans           &trans             &trans
             >;
         };
     };
