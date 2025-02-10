@@ -70,6 +70,11 @@
             bindings = <&kp LG(LS(N5))>;
             key-positions = <41 42>;
         };
+
+        entboth {
+            bindings = <&kp ENTER>;
+            key-positions = <43 44>;
+        };
     };
 
     keymap {
