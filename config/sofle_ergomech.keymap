@@ -62,7 +62,7 @@
         compatible = "zmk,combos";
 
         locks {
-            bindings = <&kp LG(LC(K_POWER))>;
+            bindings = <&kp LC(LG(Q))>;
             key-positions = <0 11>;
         };
 
