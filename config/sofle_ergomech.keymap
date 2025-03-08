@@ -62,7 +62,7 @@
         compatible = "zmk,combos";
 
         locks {
-            bindings = <&kp LC(LG(K_EJECT))>;
+            bindings = <&kp LG(LC(K_POWER))>;
             key-positions = <0 11>;
         };
 
@@ -77,7 +77,7 @@
         };
 
         topesc {
-            bindings = <&kp ESC>;
+            bindings = <&kp ESCAPE>;
             key-positions = <19 20>;
         };
     };
