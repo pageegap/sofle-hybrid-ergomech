@@ -63,7 +63,7 @@
 
         locks {
             bindings = <&kp LC(LG(Q))>;
-            key-positions = <0 11>;
+            key-positions = <53 54>;
         };
 
         prtscr {
